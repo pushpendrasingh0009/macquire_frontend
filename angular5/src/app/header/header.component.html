@@ -1,0 +1,14 @@
+<header>
+  <nav>
+    <ul>
+      <li class="text-color">Macqurie Demo Application</li>
+      <li *ngIf="userService.isUserLoggedIn()"><a routerLink="/search">Search</a></li>
+      <li *ngIf="userService.role=='ROLE_ADMIN'"><a routerLink="/admin">Admin</a></li>
+    </ul>
+    <ul class="menu-left">
+      <li *ngIf="!userService.isUserLoggedIn()"><a routerLink="/login" class="nav-link">Login</a></li>
+      <li *ngIf="userService.isUserLoggedIn()">{{userService.username}}</li>
+      <li *ngIf="userService.isUserLoggedIn()"><a (click)="userService.logout()" class="nav-link">Logout</a></li>
+    </ul>
+  </nav>
+</header>

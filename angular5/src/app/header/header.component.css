@@ -1,0 +1,13 @@
+header{
+    background-color: #ee6e73;
+}
+
+.menu-left{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end!important;
+}
+li{
+    color:brown;
+    font-weight: bold;
+}
