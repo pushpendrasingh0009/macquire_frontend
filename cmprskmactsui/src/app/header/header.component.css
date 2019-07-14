@@ -1,0 +1,23 @@
+.menu-right{
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end!important;
+}
+li{
+    color:white;
+    align-self: center;
+}
+.li-font{
+    font-family:'lato';
+}
+
+nav{
+    background-color:black;
+}
+
+a{
+    color:grey;
+}
+img{
+    height:60px;
+}

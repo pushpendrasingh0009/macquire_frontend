@@ -1,0 +1,15 @@
+<header>
+    <nav class="navbar">
+       <ul>
+        <li><img src="assets/images/logo/download.png"></li>
+        <li class="li-font">| MACTS 2.0</li>
+        <li *ngIf="userService.isUserLoggedIn()" class="li-font"><a routerLink="/search">Search</a></li>
+        <li *ngIf="userService.isUserLoggedIn() && userService.role=='ROLE_ADMIN'" class="li-font"><a routerLink="/admin">Admin</a></li>
+      </ul>
+      <ul class="menu-right">
+        <li *ngIf="userService.isUserLoggedIn()" class="li-font">{{userService.username}}</li>
+        <li *ngIf="userService.isUserLoggedIn()" class="li-font"><a (click)="userService.logout()" class="nav-link">Logout</a></li>
+        <li class="material-icons prefix" *ngIf="userService.isUserLoggedIn()">menu</li>
+      </ul>
+    </nav>
+  </header>
