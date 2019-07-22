@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="17px" viewBox="0 0 24 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-mail_active</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MACTS-1024x768---Element-Library" transform="translate(-879.000000, -736.000000)" fill="#0772BC" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0.000000, 717.000000)">
+                <g id="Mail" transform="translate(847.000000, 0.000000)">
+                    <g id="drawer" transform="translate(32.000000, 19.000000)">
+                        <path d="M23.83575,7.78125 C23.94225,7.91475 24,8.07975 24,8.25 L24,15 C24,15.82875 23.32875,16.5 22.5,16.5 L1.5,16.5 C0.67125,16.5 0,15.82875 0,15 L0,8.25 C0,8.07975 0.05775,7.914 0.16425,7.78125 L6.16425,0.28125 C6.30675,0.1035 6.522,0 6.75,0 L17.25,0 C17.478,0 17.69325,0.1035 17.83575,0.28125 L23.83575,7.78125 Z M22.5,9 L22.50075,9 L22.50075,8.51325 L16.89,1.5 L7.11075,1.5 L1.5,8.51325 L1.5,9 L6.75,9 L9.75,12 L14.25,12 L17.25,9 L22.5,9 Z M17.25,4.5 L6.75,4.5 C6.336,4.5 6,4.164 6,3.75 C6,3.336 6.336,3 6.75,3 L17.25,3 C17.664,3 18,3.336 18,3.75 C18,4.164 17.664,4.5 17.25,4.5 Z M18.75,7.5 L5.25,7.5 C4.836,7.5 4.5,7.164 4.5,6.75 C4.5,6.336 4.836,6 5.25,6 L18.75,6 C19.164,6 19.5,6.336 19.5,6.75 C19.5,7.164 19.164,7.5 18.75,7.5 Z" id="icon-mail_active"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

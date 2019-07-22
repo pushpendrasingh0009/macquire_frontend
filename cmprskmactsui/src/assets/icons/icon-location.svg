@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-location</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MACTS-1024x768---Element-Library" transform="translate(-705.000000, -18.000000)" fill="#9E9FA1">
+            <g id="Header">
+                <g id="Location" transform="translate(705.000000, 16.000000)">
+                    <path d="M4,8.5 C2.6744,8.5 1.6,7.4088125 1.6,6.0625 C1.6,4.7161875 2.6744,3.625 4,3.625 C5.3256,3.625 6.4,4.7161875 6.4,6.0625 C6.4,7.4088125 5.3256,8.5 4,8.5 M4,2 C1.7908,2 0,3.81878125 0,6.0625 C0,10.125 4,15 4,15 C4,15 8,10.125 8,6.0625 C8,3.81878125 6.2092,2 4,2" id="icon-location"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

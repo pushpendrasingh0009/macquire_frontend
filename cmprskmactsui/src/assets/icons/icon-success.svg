@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05.-Scenario-1---MACTS---Relationship-Selected" transform="translate(-455.000000, -360.000000)" fill="#6CC263">
+            <g id="Party-1-" transform="translate(63.000000, 314.000000)">
+                <g id="ver.2" transform="translate(0.000000, 28.000000)">
+                    <g id="Dropdown" transform="translate(230.000000, 0.000000)">
+                        <g id="Group-2" transform="translate(159.000000, 14.000000)">
+                            <g id="Tick" transform="translate(9.000000, 7.500000) rotate(-45.000000) translate(-9.000000, -7.500000) translate(4.000000, 5.000000)">
+                                <path d="M2,3 L10,3 L10,5 L2,5 L-9.09494702e-13,5 L-9.09494702e-13,4.54747351e-13 L2,4.54747351e-13 L2,3 Z" id="Combined-Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

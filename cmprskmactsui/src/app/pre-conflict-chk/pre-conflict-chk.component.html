@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+      <div class="col s10 offset-s1">
+          <div class="card grey lighten-2">
+              <div class="card-content white">
+                  <div class="row">
+                      <p class="font1">Preliminary Conflict Check</p>
+                      <p><img class="chevron-size" src="assets/icons/macquarie-chevron.svg"></p>
+                      <p></p>
+                      <form #preConflictChkForm="ngForm" class="col s12 white">
+                          <div>
+                              <span class="font2" >Who are the parties</span>
+                              <input class = "font2" type="text" name="Parties" (input)=OnSearch($event.target.value) placeholder="Name, Isin, Ticker, SEDOL, CUSIP, TIN" required>
+                          </div>
+                          <div>
+                                <div class="checkbox" *ngFor='let x of output'>
+                                <input type="checkbox" id={{x.name}} name={{x.name}}>
+                                <label class = "font2" for={{x.name}}>{{x.name}}</label>
+
+                                <div class="clearboth"></div>
+                                <span class = "font2"> ISIN:{{x.data.Isin}}, SEDOL:{{x.data.SEDOL}}, CUSIP:{{x.data.CUSIP}}, Ticker:{{x.data.Ticker}}, TYPE:{{x.data.type}}</span>
+                                <div class="clearboth"></div>
+                              </div>
+                          </div>
+                          <br>
+                          <div>
+                              <button [disabled]="!preConflictChkForm.valid" class="btn-large btn-submit"
+                                  type="submit">Next</button>
+
+
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
-import { USER_TOKEN,API_URL } from '../app.constants';
+import { USER_TOKEN, API_URL, GET_LOCATION_URL } from '../app.constants';
+import { Location } from '../model/location.response.model';
+import { Observable } from 'rxjs';
 
 @Injectable()
 export class UserService {
   username :string;
   role:string;
   tokenExpirationDate:Date;
-  
+
   constructor(private http: HttpClient,private router:Router) { }
 
   userAuthentication(username, password) {
@@ -25,5 +27,10 @@ export class UserService {
   logout() {
     localStorage.removeItem(USER_TOKEN);
     this.router.navigate(['/login']);
+  }
+
+  getClientIpDetails(): Observable<Location> {
+    let reqHeader = new HttpHeaders({'Accept': 'application/json', 'No-Auth': 'True'});
+    return this.http.get<Location>(GET_LOCATION_URL,  { headers: reqHeader });
   }
 }

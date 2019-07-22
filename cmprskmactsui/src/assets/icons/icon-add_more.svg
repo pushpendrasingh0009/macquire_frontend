@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-add_more</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="04.-Scenario-1---MACTS---Relationship" transform="translate(-138.000000, -520.000000)" fill="#00A1E0">
+            <g id="Party-1-" transform="translate(63.000000, 314.000000)">
+                <g id="Group" transform="translate(15.000000, 202.000000)">
+                    <g id="plus" transform="translate(60.000000, 4.000000)">
+                        <path d="M3,3 L3,1 C3,0.44771525 3.44771525,1.01453063e-16 4,0 C4.55228475,-1.01453063e-16 5,0.44771525 5,1 L5,3 L7,3 C7.55228475,3 8,3.44771525 8,4 C8,4.55228475 7.55228475,5 7,5 L5,5 L5,7 C5,7.55228475 4.55228475,8 4,8 C3.44771525,8 3,7.55228475 3,7 L3,5 L1,5 C0.44771525,5 6.76353751e-17,4.55228475 0,4 C-6.76353751e-17,3.44771525 0.44771525,3 1,3 L3,3 Z" id="icon-add_more"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

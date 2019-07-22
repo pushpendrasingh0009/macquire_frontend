@@ -16,6 +16,9 @@ import { AuthGuard } from './auth/auth.guard';
 import { FooterComponent } from './footer/footer.component';
 import { UserService } from './service/user.service';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { HomeComponent } from './home/home.component';
+import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
+import { MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { SignInComponent } from './sign-in/sign-in.component';
     AdminComponent,
     HeaderComponent,
     SearchComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    PreConflictChkComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatMenuModule
   ],
   providers: [UserService,AuthGuard,
     {

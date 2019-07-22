@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-edit</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02.-Scenario-1---MACTS---New-parties-found" transform="translate(-454.000000, -259.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Party-1" transform="translate(63.000000, 215.000000)">
+                <g id="ver.2" transform="translate(0.000000, 28.000000)">
+                    <g id="Dropdown" transform="translate(230.000000, 0.000000)">
+                        <g id="Edit" transform="translate(145.000000, 0.000000)">
+                            <g id="pencil" transform="translate(16.000000, 16.000000)">
+                                <path d="M10.96875,0 C12.0904062,0 13,0.90959375 13,2.03125 C13,2.4886875 12.848875,2.910375 12.59375,3.25 L11.78125,4.0625 L8.9375,1.21875 L9.75,0.40625 C10.089625,0.151125 10.5113125,0 10.96875,0 Z M0.8125,9.34375 L0,13 L3.65625,12.1875 L11.171875,4.671875 L8.328125,1.828125 L0.8125,9.34375 Z M9.0845625,4.6158125 L3.3970625,10.3033125 L2.6966875,9.6029375 L8.3841875,3.9154375 L9.0845625,4.6158125 Z" id="icon-edit"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

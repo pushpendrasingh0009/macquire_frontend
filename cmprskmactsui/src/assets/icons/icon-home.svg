@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="20px" viewBox="0 0 23 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-home</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MACTS-1024x768---Element-Library" transform="translate(-33.000000, -733.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0.000000, 717.000000)">
+                <g id="Home">
+                    <g id="home" transform="translate(33.000000, 16.000000)">
+                        <path d="M22.0654118,11.3529412 L20,11.3529412 L20,18.7647059 C20,19.3144118 19.7603529,20 18.7647059,20 L13.8235294,20 L13.8235294,12.5882353 L8.88235294,12.5882353 L8.88235294,20 L3.94117647,20 C2.94552941,20 2.70588235,19.3144118 2.70588235,18.7647059 L2.70588235,11.3529412 L0.640470588,11.3529412 C-0.0982352941,11.3529412 0.0598823529,10.9527059 0.566352941,10.4289412 L10.4783529,0.507058824 C10.7192353,0.257529412 11.0354706,0.134 11.3529412,0.121647059 C11.6704118,0.134 11.9866471,0.256294118 12.2275294,0.507058824 L22.1382941,10.4277059 C22.646,10.9527059 22.8041176,11.3529412 22.0654118,11.3529412 Z" id="icon-home"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

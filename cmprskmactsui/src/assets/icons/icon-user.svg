@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon-user</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MACTS-1024x768---Element-Library" transform="translate(-838.000000, -18.000000)" fill="#33B4E6">
+            <g id="Header">
+                <g id="User" transform="translate(838.000000, 15.000000)">
+                    <path d="M8,12.0405 L8,11.216 C9.1015,10.595 10,9.0475 10,7.5 C10,5.0145 10,3 7,3 C4,3 4,5.0145 4,7.5 C4,9.048 4.8985,10.595 6,11.216 L6,12.0405 C2.608,12.318 0,13.9845 0,15.9995 L14,15.9995 C14,13.9845 11.392,12.3175 8,12.0405" id="icon-user"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

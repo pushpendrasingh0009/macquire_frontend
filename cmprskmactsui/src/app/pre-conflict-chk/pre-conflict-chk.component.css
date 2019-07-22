@@ -1,0 +1,31 @@
+button{
+  background-color: #008CBA;
+  float: right;
+  width: 100%;
+}
+
+p{
+  font-size:xx-large;
+  text-align-last:center;
+  font-family:'lato';
+}
+
+.font1{
+  font-size: 18pt;
+  font-family:'lato';
+}
+
+.font2{
+  font-size: 11.5pt;
+  font-family:'lato';
+}
+.checkbox { border-radius: 10px ; border:0.3px solid rgb(131, 131, 131);  padding-left: 6pt; padding-top: 5px; margin: 3pt; background-color: rgb(226, 225, 225);}
+.checkbox label { text-align: right; font-size: 10pt; font-weight: bold; color: black}
+.checkbox span {  text-align: right; font-size: 9pt; color: rgba(58, 57, 59, 0.993); padding-left: 27pt}
+.checkbox summary {text-align: right; font-size: 8pt;}
+.checkbox clearboth { clear: both }
+
+.chevron-size{
+  width: 50%;
+  height: 0.5%;
+}
