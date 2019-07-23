@@ -1,5 +1,7 @@
 button{
     background-color: #008CBA;
+    font-family:'lato';
+    text-transform: capitalize;
 }
 
 p{
@@ -7,3 +9,5 @@ p{
     text-align-last:center;
     font-family:'lato';
 }
+
+

@@ -14,17 +14,20 @@
         <li class="li-font">{{city}}</li>
         <li><img class="img-icon" src="../../assets/icons/icon-user.svg"></li>
         <li class="li-font">{{userService.username}}</li>
-        <li><img class="img-icon" src="../../assets/icons/icon-chevron.svg"></li>
+        <!-- <li><img class="img-icon" src="../../assets/icons/icon-chevron.svg"></li> -->
         <!-- <li class="li-font"><a (click)="userService.logout()" class="nav-link">Logout</a></li> -->
         <li><img class="img-icon" [matMenuTriggerFor]="mainmenu" src="../../assets/icons/icon-menu.svg"></li>
 
         <li>
 
           <!-- <button mat-button [matMenuTriggerFor]="mainmenu"><i class="material-icons prefix"></i></button> -->
-
+         
           <mat-menu #mainmenu="matMenu" xPosition="before">
+            <button mat-menu-item routerLink="/search">Search</button>
+            <button mat-menu-item routerLink="/admin">Admin</button>
             <button mat-menu-item [matMenuTriggerFor]="conflict_checking">Conflict Checking</button>
             <button mat-menu-item [matMenuTriggerFor]="crossing">Crossing</button>
+            <button mat-menu-item routerLink="/logout">Logout</button>
           </mat-menu>
           
           <mat-menu #conflict_checking="matMenu" xPosition="before">

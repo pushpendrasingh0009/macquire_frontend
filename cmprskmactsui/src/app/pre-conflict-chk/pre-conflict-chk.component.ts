@@ -42,6 +42,16 @@ export class PreConflictChkComponent implements OnInit {
         Ticker: 'YES',
         type: 'MANUAL COMPANY'
       }
+    },
+    {
+      name: 'FOFTNI LTD',
+      data: {
+        Isin: '36445',
+        SEDOL: 'EY1',
+        CUSIP : 'S43',
+        Ticker: 'NO',
+        type: 'N/A'
+      }
     }
   ];
   }

@@ -1,7 +1,7 @@
 button{
   background-color: #008CBA;
-  float: right;
-  width: 100%;
+  font-family:'lato';
+  text-transform: capitalize;
 }
 
 p{
@@ -25,7 +25,3 @@ p{
 .checkbox summary {text-align: right; font-size: 8pt;}
 .checkbox clearboth { clear: both }
 
-.chevron-size{
-  width: 50%;
-  height: 0.5%;
-}
