@@ -37,6 +37,9 @@ div.error-message i{
 
 body{
   background-color: #ECECEC ;
+  height: 100%;
+  position: relative;
+  min-height: 99.8vh;
 }
 
 @font-face {
