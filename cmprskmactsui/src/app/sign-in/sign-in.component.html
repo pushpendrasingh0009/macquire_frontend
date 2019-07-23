@@ -9,40 +9,29 @@
                         <div *ngIf="isLoginError" class="red-text center error-message">
                             <i class="material-icons">error</i> Incorrect username or password
                         </div>
-                        <form #loginForm="ngForm" class="col s12 white" 
+                        <form #loginForm="ngForm" class="col s12 white"
                             (ngSubmit)="OnSubmit(UserName.value,Password.value)">
-<<<<<<< HEAD
-                            <div>
-                                <span class="body-font">User name*</span>
-                                <input class="body-font" type="text" #UserName ngModel name="UserName" placeholder="Username" required>
-                            </div>
-                            <div>
-                                <span class="body-font">Password*</span>
-                                <input class="body-font" type="password" #Password ngModel name="Password" placeholder="Password"
-                                    required>
-=======
                             <div class="container">
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">account_circle</i>
                                     <input type="text" #UserName ngModel name="UserName" placeholder="Username"
-                                        required align-text="center">
+                                        required align-text="center" class="body-font">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
                                     <i class="material-icons prefix">vpn_key</i>
                                     <input type="password" #Password ngModel name="Password" placeholder="Password"
-                                        required>
+                                        required class="body-font">
                                 </div>
->>>>>>> df23f2981186741902efb1bffe1f72a8deeebc28
                             </div>
-                            <div class="row">  
+                            <div class="row">
                                 <div class="input-field col s12">
                                     <button [disabled]="!loginForm.valid" class="btn-large btn-submit"
                                         type="submit">Login</button>
                                 </div>
-                            
+
                             </div>
                         </div>
                         </form>

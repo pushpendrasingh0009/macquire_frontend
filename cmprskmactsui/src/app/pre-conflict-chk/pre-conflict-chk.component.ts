@@ -10,6 +10,8 @@ import { SimplePartyFuse } from './pre-conflict-chk.model';
 export class PreConflictChkComponent implements OnInit {
   public searchData: SimplePartyFuse [] ;
   public output: SimplePartyFuse[];
+  public parties: string;
+
   constructor() { }
 
   ngOnInit() {
@@ -57,7 +59,7 @@ export class PreConflictChkComponent implements OnInit {
   }
 
   OnSearch(searchValue: string) {
-    console.log('in change' + searchValue);
+    // console.log('in change' + searchValue);
     const options: Fuse.FuseOptions<SimplePartyFuse> = {
       shouldSort: true,
       threshold: 0.4,
@@ -68,7 +70,11 @@ export class PreConflictChkComponent implements OnInit {
       keys: ['name', 'data'],
     };
     const fuse = new Fuse(this.searchData, options);
-    this.output = fuse.search(searchValue);
-    console.log(this.output);
+    this.output = fuse.search(this.parties);
+    // console.log(this.output);
+  }
+
+  OnChecked(partyName: string, event) {
+      console.log(partyName);
   }
 }
