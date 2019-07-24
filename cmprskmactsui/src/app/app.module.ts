@@ -19,6 +19,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
 import { MatMenuModule} from '@angular/material/menu';
+import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatMenuModule} from '@angular/material/menu';
     SearchComponent,
     FooterComponent,
     HomeComponent,
-    PreConflictChkComponent
+    PreConflictChkComponent,
+    PreliminaryCnfltChkComponent
   ],
   imports: [
     BrowserModule,

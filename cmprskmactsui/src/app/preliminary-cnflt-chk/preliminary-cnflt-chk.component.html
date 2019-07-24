@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+      <div class="col s8 offset-s2">
+          <div class="card grey lighten-2">
+              <div class="card-content white">
+                  <div class="row">
+                      <h5> <strong>PRELIMINARY CONFLICT CHECK</strong></h5>
+
+                      <form #preCnfltChkForm="ngForm" class="col s12 white"
+                          (ngSubmit)="OnSearch(PartiesName.value, DealAmount)">
+                          <div>
+                              <span class="font2">Who are the parties</span>
+                              <input class="font2" type="text" #PartiesName ngModel name="PartiesName"
+                                required>
+                          </div>
+                          <div>
+                              <span class="font2">What is the deal size</span>
+                              <input class="font2" type="text"
+                              [(ngModel)]="DealAmount" name="DealAmount" required>
+                          </div>
+                          <div>
+                            <button [disabled]="!preCnfltChkForm.valid" class="btn-large btn-submit"
+                                type="submit">Search Conflicts</button>
+                        </div>
+                       </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
