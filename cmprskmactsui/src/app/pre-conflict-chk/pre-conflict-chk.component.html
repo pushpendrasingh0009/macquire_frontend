@@ -21,7 +21,10 @@
                                   <div class="clearboth"></div>
                               </div>
                           </div>
-                          <br>
+                          <div>
+                              <span class="body-font" >Selected Parties*</span>
+                              <input class="body-font" type="text" name="selPartyStr" [(ngModel)]="selPartyStr" required readonly=true>
+                          </div>
                           <div>
                               <button [disabled]="!preConflictChkForm.valid" class="btn-large btn-submit"
                                   type="submit">Next</button>

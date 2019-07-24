@@ -12,9 +12,10 @@ p{
 
 .checkbox {
   border-radius: 10px ;
+  align-content: center;
   border:0.3px solid rgb(131, 131, 131);
   padding-left: 6pt;
-  padding-top: 5px;
+  padding-top: 3px;
   margin: 3pt;
   background-color: rgb(226, 225, 225);
 }
@@ -27,9 +28,14 @@ p{
 
 .container-scroll {
   border-radius: 10px ;
-  border:0.3px solid rgb(131, 131, 131);
+  border:0.3px rgb(131, 131, 131);
   background-color:white;
   max-height: 110pt;
   overflow-y: scroll;
+  margin-bottom: 10px;
+}
 
+input[type="text"]:read-only {
+    cursor: normal;
+    color: #999;
 }

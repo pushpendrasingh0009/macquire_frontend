@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Fuse from 'fuse.js';
 import { SimplePartyFuse } from './pre-conflict-chk.model';
+import { count } from 'rxjs/operators';
 
 @Component({
   selector: 'app-pre-conflict-chk',
@@ -8,13 +9,16 @@ import { SimplePartyFuse } from './pre-conflict-chk.model';
   styleUrls: ['./pre-conflict-chk.component.css']
 })
 export class PreConflictChkComponent implements OnInit {
-  public searchData: SimplePartyFuse [] ;
-  public output: SimplePartyFuse[];
-  public parties: string;
+  searchData: SimplePartyFuse [] ;
+  output: SimplePartyFuse[];
+  parties: string;
+  selPartyStr: string;
+  selectedParties: Set<string> ;
 
   constructor() { }
 
   ngOnInit() {
+    this.selectedParties = new Set<string>();
     this.searchData = [{
       name: 'RIO TINTO',
       data: {
@@ -59,7 +63,6 @@ export class PreConflictChkComponent implements OnInit {
   }
 
   OnSearch(searchValue: string) {
-    // console.log('in change' + searchValue);
     const options: Fuse.FuseOptions<SimplePartyFuse> = {
       shouldSort: true,
       threshold: 0.4,
@@ -71,10 +74,22 @@ export class PreConflictChkComponent implements OnInit {
     };
     const fuse = new Fuse(this.searchData, options);
     this.output = fuse.search(this.parties);
-    // console.log(this.output);
   }
 
   OnChecked(partyName: string, event) {
-      console.log(partyName);
+      let counter = 0;
+      if (event.target.checked) {
+        this.selectedParties.add(partyName);
+      } else {
+        this.selectedParties.delete(partyName);
+      }
+      this.selPartyStr = '';
+      for (const elem of this.selectedParties) {
+        if (counter !== 0) {
+          this.selPartyStr += ', ';
+        }
+        this.selPartyStr += elem;
+        counter++;
+      }
   }
 }
