@@ -16,12 +16,12 @@
         <li class="li-font">{{userService.username}}</li>
         <!-- <li><img class="img-icon" src="../../assets/icons/icon-chevron.svg"></li> -->
         <!-- <li class="li-font"><a (click)="userService.logout()" class="nav-link">Logout</a></li> -->
-        <li><img class="img-icon" [matMenuTriggerFor]="mainmenu" src="../../assets/icons/icon-menu.svg"></li>
+        <li><img class="img-icon"  [matMenuTriggerFor]="mainmenu" src="../../assets/icons/icon-menu.svg"></li>
 
         <li>
 
           <!-- <button mat-button [matMenuTriggerFor]="mainmenu"><i class="material-icons prefix"></i></button> -->
-         
+ 
           <mat-menu #mainmenu="matMenu" xPosition="before">
             <button mat-menu-item routerLink="/search">Search</button>
             <button mat-menu-item routerLink="/admin">Admin</button>
@@ -30,12 +30,12 @@
             <button mat-menu-item routerLink="/logout">Logout</button>
           </mat-menu>
           
-          <mat-menu #conflict_checking="matMenu" xPosition="before">
+          <mat-menu #conflict_checking="matMenu" yPosition="below">
             <button mat-menu-item routerLink="/preconfcheck">Preliminary Conflic Check</button>
             <button mat-menu-item>Conflict Check Request</button>
           </mat-menu>
           
-          <mat-menu #crossing="matMenu" xPosition="before">
+          <mat-menu #crossing="matMenu" yPosition="below" >
             <button mat-menu-item>Crossing Request</button>
             <button mat-menu-item>Crossing Request 2</button>
             <button mat-menu-item>Crossing Request 3</button>

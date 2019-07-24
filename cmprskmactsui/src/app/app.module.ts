@@ -19,6 +19,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
 import { MatMenuModule} from '@angular/material/menu';
+import { MatSelectModule, MatButtonModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,9 @@ import { MatMenuModule} from '@angular/material/menu';
     BrowserAnimationsModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [UserService,AuthGuard,
     {
