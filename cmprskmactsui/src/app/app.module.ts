@@ -20,6 +20,8 @@ import { HomeComponent } from './home/home.component';
 import { PreConflictChkComponent } from './pre-conflict-chk/pre-conflict-chk.component';
 import { MatMenuModule} from '@angular/material/menu';
 import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminary-cnflt-chk.component';
+import { MatSelectModule, MatButtonModule } from '@angular/material';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { PreliminaryCnfltChkComponent } from './preliminary-cnflt-chk/preliminar
     BrowserAnimationsModule,
     AppRoutingModule,
     ToastrModule.forRoot(),
-    MatMenuModule
+    MatMenuModule,
+    MatSelectModule,
+    MatButtonModule
   ],
   providers: [UserService,AuthGuard,
     {

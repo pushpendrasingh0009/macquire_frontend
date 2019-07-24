@@ -37,3 +37,11 @@ img{
     border:0;
     padding: 0%;
 }
+
+.mat-menu-item-highlighted, .mat-menu-item.cdk-keyboard-focused, .mat-menu-item.cdk-program-focused, .mat-menu-item:hover {
+    background: #acecfc !important;
+}
+
+.mat-menu-item{
+    background: #fafafa !important;
+}

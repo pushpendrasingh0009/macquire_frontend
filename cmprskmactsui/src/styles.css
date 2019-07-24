@@ -52,3 +52,19 @@ body{
   width: 100%;
   height: 100%;
 }
+
+.chevron-size{
+  width: 100%;
+  height: 25px;
+  vertical-align: top;
+}
+
+.header-font{
+  font-size: 12pt;
+  font-family:'lato';
+}
+
+.body-font{
+  font-size: 11.5 pt;
+  font-family:'lato';
+}
