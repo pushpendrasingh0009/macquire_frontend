@@ -20,14 +20,12 @@ export class HeaderComponent implements OnInit {
     }, 1);
 
     userService.getClientIpDetails().subscribe((data: Location) => {
-      console.log('hello' + data);
       this.city = data.city;
       this.country = data.country;
     },
     (err: HttpErrorResponse) => {
-      this.city = 'N/A';
-      this.country = 'N/A';
-      console.log(err);
+      this.city = 'Sydney';
+      this.country = 'Australia';
     });
 
   }
