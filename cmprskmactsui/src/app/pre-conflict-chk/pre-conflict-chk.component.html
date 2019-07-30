@@ -8,22 +8,30 @@
                       <p><img class="chevron-size" src="assets/icons/macquarie-chevron.svg"></p>
                       <p></p>
                       <form #preConflictChkForm="ngForm" class="col s12 white">
-                          <div>
+                          <div class="input-div">
                               <span class="body-font" >Who are the parties</span>
-                              <input class = "body-font" type="text" name="parties" [(ngModel)]="parties" (input)=OnSearch() placeholder="Name, Isin, Ticker, SEDOL, CUSIP, TIN" >
+                              <input class = "body-font" type="search" name="parties" [(ngModel)]="parties" (input)=OnSearch() placeholder="Name, Isin, Ticker, SEDOL, CUSIP, TIN" >
                           </div>
                           <div class="container-scroll">
+                              <div class="check_selectall" *ngIf="output?.length > 0">
+                                <input type="checkbox" id="selectall" (change)="onRadioSelect($event)"><label for="selectall">Select All</label>
+                              </div>
                               <div class="checkbox" *ngFor='let x of output'>
-                                  <input type="checkbox" id={{x.name}} name={{x.name}} (change)="OnChecked(x.name, $event)">
+                                  <input type="checkbox" id={{x.name}} name={{x.name}} [checked]="selectedParties.has(x.name)" (change)="OnChecked(x.name, $event)">
                                   <label class = "body-font" for={{x.name}}>{{x.name}}</label>
                                   <div class="clearboth"></div>
-                                  <span class = "body-font"> ISIN:{{x.data.Isin}}, SEDOL:{{x.data.SEDOL}}, CUSIP:{{x.data.CUSIP}}, Ticker:{{x.data.Ticker}}, TYPE:{{x.data.type}}</span>
+                                  <span><font> ISIN:{{x.data.Isin}}, SEDOL:{{x.data.SEDOL}}, CUSIP:{{x.data.CUSIP}}, Ticker:{{x.data.Ticker}}, TYPE:{{x.data.type}}</font></span>
                                   <div class="clearboth"></div>
                               </div>
                           </div>
                           <div>
                               <span class="body-font" >Selected Parties*</span>
-                              <input class="body-font" type="text" name="selPartyStr" [(ngModel)]="selPartyStr" required readonly=true>
+                              <!-- <input class="body-font" type="text" name="selPartyStr" [(ngModel)]="selPartyStr" required readonly=true> -->
+                              <div class="selectedList">
+                                <span *ngFor="let party of selectedParties" class="comma">{{party}} <a (click)="OnCancel(party)"><img class="close_img" src="../../assets/icons/close-span.svg"></a> </span>
+                              </div>
+
+
                           </div>
                           <div>
                               <button [disabled]="!preConflictChkForm.valid" class="btn-large btn-submit"

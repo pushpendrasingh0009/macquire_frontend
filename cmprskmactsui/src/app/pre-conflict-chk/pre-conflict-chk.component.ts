@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Fuse from 'fuse.js';
 import { SimplePartyFuse } from './pre-conflict-chk.model';
-import { count } from 'rxjs/operators';
+import { UserService } from '../service/user.service';
 
 @Component({
   selector: 'app-pre-conflict-chk',
@@ -12,54 +12,13 @@ export class PreConflictChkComponent implements OnInit {
   searchData: SimplePartyFuse [] ;
   output: SimplePartyFuse[];
   parties: string;
-  selPartyStr: string;
   selectedParties: Set<string> ;
 
-  constructor() { }
+  constructor(public userService: UserService) { }
 
   ngOnInit() {
     this.selectedParties = new Set<string>();
-    this.searchData = [{
-      name: 'RIO TINTO',
-      data: {
-        Isin: '562jsi2',
-        SEDOL: 'teyyww',
-        CUSIP : 'N/A',
-        Ticker: 'YES',
-        type: 'N/A'
-      }
-    },
-    {
-      name: 'TINPLATE INC',
-      data: {
-        Isin: '561234',
-        SEDOL: 'YTER',
-        CUSIP : 'TER',
-        Ticker: 'NO',
-        type: 'N/A'
-      }
-    },
-    {
-      name: 'TINSOFT LTD',
-      data: {
-        Isin: '561245',
-        SEDOL: 'YTE1',
-        CUSIP : 'T45',
-        Ticker: 'YES',
-        type: 'MANUAL COMPANY'
-      }
-    },
-    {
-      name: 'FOFTNI LTD',
-      data: {
-        Isin: '36445',
-        SEDOL: 'EY1',
-        CUSIP : 'S43',
-        Ticker: 'NO',
-        type: 'N/A'
-      }
-    }
-  ];
+    this.searchData = this.userService.getPartyData();
   }
 
   OnSearch(searchValue: string) {
@@ -77,19 +36,27 @@ export class PreConflictChkComponent implements OnInit {
   }
 
   OnChecked(partyName: string, event) {
-      let counter = 0;
       if (event.target.checked) {
         this.selectedParties.add(partyName);
       } else {
         this.selectedParties.delete(partyName);
       }
-      this.selPartyStr = '';
-      for (const elem of this.selectedParties) {
-        if (counter !== 0) {
-          this.selPartyStr += ', ';
-        }
-        this.selPartyStr += elem;
-        counter++;
-      }
+  }
+
+  OnCancel(partyName: string) {
+    this.selectedParties.delete(partyName);
+  }
+
+  onRadioSelect(event) {
+    console.log(event.target.checked);
+    if (event.target.checked) {
+      this.output.forEach(element => {
+          this.selectedParties.add(element.name);
+      });
+    } else {
+      this.output.forEach(element => {
+        this.selectedParties.delete(element.name);
+    });
+    }
   }
 }

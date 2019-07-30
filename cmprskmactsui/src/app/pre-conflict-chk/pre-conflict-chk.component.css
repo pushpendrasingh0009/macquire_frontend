@@ -8,6 +8,11 @@ p{
   font-size:xx-large;
   text-align-last:center;
   font-family:'lato';
+  height: fit-content;
+}
+
+input-div{
+  height: fit-content;
 }
 
 .checkbox {
@@ -30,7 +35,7 @@ p{
   border-radius: 10px ;
   border:0.3px rgb(131, 131, 131);
   background-color:white;
-  max-height: 110pt;
+  max-height: 80pt;
   overflow-y: scroll;
   margin-bottom: 10px;
 }
@@ -39,3 +44,40 @@ input[type="text"]:read-only {
     cursor: normal;
     color: #999;
 }
+
+div.selectedList {
+  margin-top:5px;
+  margin-bottom:10px;
+  padding: 2px;
+  border-bottom: 0.5px solid rgb(145, 145, 145);
+  border-radius: 1.5px ;
+  max-height: 40pt;
+  overflow-y: scroll;
+  font-family:'lato';
+}
+
+.check_selectall{
+  font-family:'lato';
+  align-self: center;
+  padding-left: 8.2pt;
+}
+
+.close_img{
+  width: 2.3%;
+  height: 2.3%;
+}
+
+.comma{
+  border: 0.1px solid rgb(211, 211, 211);
+  border-radius: 2px ;
+  background: rgb(208, 209, 209);
+  margin-right: 4px;
+  font-size: 9pt;
+}
+
+a{
+  cursor: pointer;
+}
+/* .comma ~ .comma:not(:empty):before {
+  content: ",";
+} */
